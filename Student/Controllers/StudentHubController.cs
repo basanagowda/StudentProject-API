@@ -11,7 +11,7 @@ namespace Student.Controllers
     {
 
         StudentHubRepository repo = new StudentHubRepository();
-
+//get all the students data//
         [HttpGet("GetStudents")]
         public List<studentHubModel> GetStudents()
         {
