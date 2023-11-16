@@ -25,7 +25,7 @@ namespace Student.Controllers
             studentHubModel student = repo.GetStudentById(id);
             return student;
         }
-
+//updating//
         [HttpPost]
         public int AddStudent(studentHubModel student)
         {
