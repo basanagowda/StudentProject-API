@@ -18,7 +18,7 @@ namespace Student.Controllers
             List<studentHubModel> students = repo.GetAllStudents();
             return students;
         }
-
+//getall//
         [HttpGet]
         public studentHubModel GetStudentById(int id)
         {
