@@ -37,6 +37,8 @@ namespace Student.Controllers
 
 
         [HttpGet("{id}")]
+
+        public studentHubModel GetStudentById(int id)
         public studentHubModel GetStudentById(int id)
         {
             studentHubModel student = repo.GetStudentById(id);
