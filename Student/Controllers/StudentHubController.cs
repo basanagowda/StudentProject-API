@@ -36,8 +36,16 @@ namespace Student.Controllers
         }
 
 
+        [HttpGet("{id}")]
+        public studentHubModel GetStudentById(int id)
+        {
+            studentHubModel student = repo.GetStudentById(id);
+            return student;
+        }
 
-//updating//
+
+
+        //updating//
         [HttpPost]
         public int AddStudent(studentHubModel student)
         {
