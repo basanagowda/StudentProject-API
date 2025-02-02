@@ -18,7 +18,7 @@ namespace Student.Controllers
             List<studentHubModel> students = repo.GetAllStudents();
             return students;
         }
-
+//getall//
         [HttpGet]
         public studentHubModel GetStudentById(int id)
         {
@@ -26,6 +26,28 @@ namespace Student.Controllers
             return student;
         }
 
+
+
+        [HttpGet("{id}")]
+        public studentHubModel GetStudentById(int id)
+        {
+            studentHubModel student = repo.GetStudentById(id);
+            return student;
+        }
+
+
+        [HttpGet("{id}")]
+
+        public studentHubModel GetStudentById(int id)
+        public studentHubModel GetStudentById(int id)
+        {
+            studentHubModel student = repo.GetStudentById(id);
+            return student;
+        }
+
+
+
+        //updating//
         [HttpPost]
         public int AddStudent(studentHubModel student)
         {
